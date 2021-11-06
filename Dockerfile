@@ -7,8 +7,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn
+RUN yarn install
 
 EXPOSE 8080
 
-RUN yarn dev
