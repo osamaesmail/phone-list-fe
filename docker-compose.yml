@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  phone-list-fe:
+    build: .
+    ports:
+      - 5002:8080
+    volumes:
+      - .:/app:rw
