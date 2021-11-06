@@ -21,3 +21,8 @@ yarn build
 ```bash
 yarn build:pwa
 ```
+
+### Run tests
+```bash
+yarn test:unit
+```
