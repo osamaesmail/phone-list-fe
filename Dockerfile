@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:16-alpine
 
 USER root
 RUN npm install -g @quasar/cli
