@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3'
 services:
   phone-list-fe:
     build: .
@@ -6,3 +6,8 @@ services:
       - 5002:8080
     volumes:
       - .:/app:rw
+    command: sh
+    stdin_open: true
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
