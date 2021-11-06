@@ -7,7 +7,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn
+RUN npm install
 
 EXPOSE 8080
 
