@@ -3,6 +3,6 @@ services:
   phone-list-fe:
     build: .
     ports:
-      - 5002:8080
+      - 5002:4000
     volumes:
       - .:/app
