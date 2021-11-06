@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import {defineComponent, computed, watch, ref} from 'vue';
+import {defineComponent, ref, computed, watch, onMounted} from 'vue';
 import { useStore } from 'vuex';
 import {columns, countries, states} from 'src/constants/customer';
 import {usePagination} from 'src/hooks';
@@ -53,9 +53,8 @@ export default defineComponent({
       state: state.value.value,
     }));
 
-    loadData();
-
     watch(filter, () => loadData());
+    onMounted(() => loadData())
 
     function loadData() {
       store.dispatch('customer/loadData', filter.value);

@@ -19,5 +19,5 @@ export const error = (message, options = {}) => {
     color: 'red',
     ...defaultOptions,
     ...options,
-  })
+  });
 }
