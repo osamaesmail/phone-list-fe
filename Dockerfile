@@ -5,8 +5,10 @@ RUN npm install -g @quasar/cli
 
 WORKDIR /app
 
+COPY . .
+
 RUN yarn
 
-EXPOSE 4000
+EXPOSE 8080
 
-CMD ["yarn", "dev"]
+RUN yarn dev

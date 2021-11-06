@@ -6,7 +6,7 @@
   "author": "Osama Esmail <osamaesmail2@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "quasar serve",
+    "dev": "quasar dev",
     "build": "quasar build",
     "build:pwa": "quasar build -m pwa",
     "test:unit": "jest --updateSnapshot",
