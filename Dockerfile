@@ -1,12 +1,10 @@
-FROM node:16-alpine
+FROM node:16
+
+USER root
+RUN npm install -g @quasar/cli
 
 WORKDIR /app
 
-COPY . .
-
-#RUN npm install -g @quasar/cli && \
-#    npm install -g @vue/cli && \
-#    npm install -g @vue/cli-init
 RUN yarn
 
 EXPOSE 8080
