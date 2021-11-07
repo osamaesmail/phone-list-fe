@@ -29,11 +29,12 @@
     "@quasar/app": "^3.0.0",
     "@quasar/quasar-app-extension-testing": "^2.0.1",
     "@quasar/quasar-app-extension-testing-unit-jest": "^3.0.0-alpha.6",
+    "dotenv": "^10.0.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-jest": "^25.2.2",
     "eslint-plugin-vue": "^7.0.0",
-    "eslint-webpack-plugin": "^2.4.0",
-    "eslint-plugin-jest": "^25.2.2"
+    "eslint-webpack-plugin": "^2.4.0"
   },
   "browserslist": [
     "last 10 Chrome versions",
