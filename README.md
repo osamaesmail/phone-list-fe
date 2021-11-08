@@ -7,6 +7,12 @@ phone-list app
 yarn
 ```
 
+## Setup config
+copy `.env.example` to `.env` and update your config
+```bash
+cp .env.example .env
+```
+
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
 yarn dev
